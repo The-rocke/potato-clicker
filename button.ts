@@ -1,15 +1,19 @@
 //% blockNamespace="ui"
 namespace button {
-    export class Button {
+    // ALL BUTTONS INHERIT FROM BASE BUTTON CLASS
+    export abstract class Button {
         sprite: Sprite
 
         constructor(sprite: Sprite) {
             this.sprite = sprite
         }
 
-        trigger() {
-        }
+        trigger(): void {}
     }
 
-    // ALL BUTTONS INHERIT FROM BUTTON CLASS
+    export class Spud extends Button {
+        trigger() {
+
+        }
+    }
 }

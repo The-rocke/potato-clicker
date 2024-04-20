@@ -1,4 +1,5 @@
 import Button = button.Button
+import Spud = button.Spud
 
 //% block="UI" weight=102 color=#678f6c icon="\uf00b"
 //% groups=["UIManager", "Button"]
@@ -6,13 +7,13 @@ namespace ui {
     const buttonArr: Button[] = []
     let cursor: Sprite = null
 
-    /** Instances a new Button object
-     * @param sprite - The texture of the button
+    /** Instances a new clickable Spud object
+     * @param sprite - The texture of the Spud
      */
-    //% block="Instance|Button $sprite $tiggerEvent " group="Button"
+    //% block="Instance|clickable|Spud $sprite $tiggerEvent " group="Button"
     //% group="Button"
-    export function instanceButton(sprite: Sprite): void {
-        let button = new Button(sprite)
+    export function instanceSpud(sprite: Sprite): void {
+        let button = new Spud(sprite)
         buttonArr.push(button)
     }
 
