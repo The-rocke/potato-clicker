@@ -1,3 +1,5 @@
+import scoreMng = score_manager
+
 //% blockNamespace="ui"
 namespace button {
     // ALL BUTTONS INHERIT FROM BASE BUTTON CLASS
@@ -13,7 +15,7 @@ namespace button {
 
     export class Spud extends Button {
         trigger() {
-
+            score_manager.onSpudClick()
         }
     }
 }

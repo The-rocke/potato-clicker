@@ -12,7 +12,8 @@
         "tilemap.g.jres",
         "tilemap.g.ts",
         "button.ts",
-        "ui.ts"
+        "ui.ts",
+        "score_manager.ts"
     ],
     "testFiles": [
         "test.ts"
