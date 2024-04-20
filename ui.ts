@@ -1,5 +1,7 @@
 import Button = button.Button
 import Spud = button.Spud
+import Upgrade = upgrade.Upgrade
+import UpgradeButton = upgrade.UpgradeButton
 
 //% block="UI" weight=102 color=#678f6c icon="\uf00b"
 //% groups=["UIManager", "Button"]
@@ -14,6 +16,11 @@ namespace ui {
     //% group="Button"
     export function instanceSpud(sprite: Sprite): void {
         let button = new Spud(sprite)
+        buttonArr.push(button)
+    }
+
+    export function addUpgradeButton(sprite: Sprite, upgrade: Upgrade, basePrice: number): void {
+        let button = new UpgradeButton(sprite, upgrade, basePrice)
         buttonArr.push(button)
     }
 

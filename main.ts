@@ -41,3 +41,26 @@ ui.setCursor(sprites.create(img`
     . . . . . . . . . . . . . . . . 
     `, SpriteKind.Player))
 ui.instanceSpud(spud)
+upgrade.addUpgrade(
+2,
+"Farm",
+sprites.create(img`
+    f f f f f f f f f f f f f f f f 
+    f b b b b b b b b b b b b b b f 
+    f b b b b b b b b b b b b b b f 
+    f b b b b b b 7 b b b b b b b f 
+    f b b b b 7 7 7 b b b b b b b f 
+    f b b b b b b 7 7 7 b b b b b f 
+    f b b b b b 7 7 7 7 b b b b b f 
+    f b b b b b 7 b b b b b b b b f 
+    f b e e e e 7 e e e e e b b b f 
+    f b e e e e 7 e e e e e e b b f 
+    f b e e e e 7 e e e e e e b b f 
+    f f e e e e e e e e e e e b b f 
+    f b e e e e e e e e e e b b b f 
+    f b b b e e e e e e e b b b b f 
+    f b b b b b b b b b b b b b b f 
+    f f f f f f f f f f f f f f f f 
+    `, SpriteKind.Clickable),
+0
+)

@@ -13,7 +13,8 @@
         "tilemap.g.ts",
         "button.ts",
         "ui.ts",
-        "score_manager.ts"
+        "upgrade.ts",
+        "clicker_game.ts"
     ],
     "testFiles": [
         "test.ts"
@@ -25,5 +26,5 @@
     "supportedTargets": [
         "arcade"
     ],
-    "preferredEditor": "tsprj"
+    "preferredEditor": "blocksprj"
 }
