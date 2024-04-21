@@ -23,8 +23,6 @@ let spud = sprites.create(img`
 spud.setPosition(25, 50)
 spud.changeScale(2, ScaleAnchor.Middle)
 upgrade.addUpgrade(
-2,
-"Farm",
 sprites.create(img`
     f f f f f f f f f f f f f f f f 
     f b b b b b b b b b b b b b b f 
@@ -43,7 +41,9 @@ sprites.create(img`
     f b b b b b b b b b b b b b b f 
     f f f f f f f f f f f f f f f f 
     `, SpriteKind.Clickable),
-10
+2,
+10,
+"Farm"
 )
 ui.setCursor(sprites.create(img`
     f . . . . . . f f f f . . . . . 
@@ -64,6 +64,3 @@ ui.setCursor(sprites.create(img`
     . . . . . . . . . . . . . . . . 
     `, SpriteKind.Player))
 ui.instanceSpud(spud)
-game.onUpdate(function () {
-	
-})

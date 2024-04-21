@@ -1,7 +1,7 @@
 import Button = button.Button
 import Spud = button.Spud
 import Upgrade = upgrade.Upgrade
-import UpgradeButton = upgrade.UpgradeButton
+import UpgradeButton = upgrade.Upgrade
 
 //% block="UI" weight=102 color=#678f6c icon="\uf00b"
 //% groups=["UIManager", "Button"]
@@ -19,8 +19,9 @@ namespace ui {
         buttonArr.push(button)
     }
 
-    export function addUpgradeButton(sprite: Sprite, upgrade: Upgrade, basePrice: number): void {
-        let button = new UpgradeButton(sprite, upgrade, basePrice)
+    export function addUpgradeButton(sprite: Sprite,
+            ppsBonus: number, basePrice: number, upgradeType: string): void {
+        const button = new UpgradeButton(sprite, ppsBonus, basePrice, upgradeType)
         buttonArr.push(button)
     }
 
