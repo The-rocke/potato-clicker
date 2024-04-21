@@ -11,6 +11,10 @@ namespace upgrade {
         }
 
         trigger() {
+            if(clicker_game.scoreF >= this.basePrice) {
+                clicker_game.increasePps(this.upgrade.ppsBonus)
+                clicker_game.modifyScore(this.basePrice*-1)
+            }
         }
     }
 

@@ -22,25 +22,6 @@ let spud = sprites.create(img`
     `, SpriteKind.Clickable)
 spud.setPosition(25, 50)
 spud.changeScale(2, ScaleAnchor.Middle)
-ui.setCursor(sprites.create(img`
-    f . . . . . . f f f f . . . . . 
-    f f f f f f f 1 1 1 f . . . . . 
-    f 1 1 1 1 1 1 1 1 f . . . . . . 
-    f 1 1 1 1 1 1 1 f . . . . . . . 
-    f f 1 1 1 1 1 1 f f f . . . . . 
-    . f 1 1 f f 1 1 1 1 f f . . . . 
-    . f 1 f f . f f 1 f f . . . . . 
-    . f f . . . . f f f . . . . . . 
-    . f f . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    `, SpriteKind.Player))
-ui.instanceSpud(spud)
 upgrade.addUpgrade(
 2,
 "Farm",
@@ -62,5 +43,27 @@ sprites.create(img`
     f b b b b b b b b b b b b b b f 
     f f f f f f f f f f f f f f f f 
     `, SpriteKind.Clickable),
-0
+10
 )
+ui.setCursor(sprites.create(img`
+    f . . . . . . f f f f . . . . . 
+    f f f f f f f 1 1 1 f . . . . . 
+    f 1 1 1 1 1 1 1 1 f . . . . . . 
+    f 1 1 1 1 1 1 1 f . . . . . . . 
+    f f 1 1 1 1 1 1 f f f . . . . . 
+    . f 1 1 f f 1 1 1 1 f f . . . . 
+    . f 1 f f . f f 1 f f . . . . . 
+    . f f . . . . f f f . . . . . . 
+    . f f . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    `, SpriteKind.Player))
+ui.instanceSpud(spud)
+game.onUpdate(function () {
+	
+})
