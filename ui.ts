@@ -20,8 +20,8 @@ namespace ui {
     }
 
     export function addUpgradeButton(sprite: Sprite,
-            ppsBonus: number, basePrice: number, upgradeType: string): void {
-        const button = new UpgradeButton(sprite, ppsBonus, basePrice, upgradeType)
+            ppsBonus: number, basePrice: number, priceMod: number, upgradeType: string): void {
+        const button = new UpgradeButton(sprite, ppsBonus, basePrice, priceMod, upgradeType)
         buttonArr.push(button)
     }
 
