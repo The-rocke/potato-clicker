@@ -2,6 +2,7 @@ namespace SpriteKind {
     export const Clickable = SpriteKind.create()
 }
 info.setScore(0)
+clicker_game.setPpc(100)
 let spud = sprites.create(img`
     . . . . . f f . . . . . . . . . 
     . . . f f f f f f f f . . . . . 
