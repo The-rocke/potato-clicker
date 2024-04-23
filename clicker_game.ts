@@ -6,6 +6,12 @@ namespace clicker_game {
     export let scoreF: number = 0 // Floating point value of score
     let ppu: number = 0 // Potatoes per game update
 
+    export class Spud extends Button {
+        trigger() {
+            clicker_game.onSpudClick()
+        }
+    }
+
     // On game update
     game.onUpdate(function () {
         // Adds passive ppu to score
@@ -36,6 +42,15 @@ namespace clicker_game {
     // Updates the displayed score
     function updateScoreDisplay() {
         info.setScore(Math.floor(scoreF))
+    }
+
+    /** Instances a new clickable Spud object and returns its index
+    * @param sprite - The texture of the Spud
+    */
+    //% block="Instance|clickable|Spud $sprite" group="Button"
+    //% group="Game"
+    export function instanceSpud(sprite: Sprite): int32 {
+        return ui.addSpud(sprite)
     }
 
     /**Sets the potatoes per click

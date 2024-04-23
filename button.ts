@@ -9,10 +9,4 @@ namespace button {
         trigger(): void {}
         showInfo(): void {}
     }
-
-    export class Spud extends Button {
-        trigger() {
-            clicker_game.onSpudClick()
-        }
-    }
 }
