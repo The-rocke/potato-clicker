@@ -9,6 +9,11 @@ namespace ui {
     const buttonArr: Button[] = []
     let cursor: Sprite = null
 
+    // On game update
+    game.onUpdate(function () {
+        cursorOverlapsButton()
+    })
+
     /** Instances a new clickable Spud object
      * @param sprite - The texture of the Spud
      */
@@ -34,6 +39,21 @@ namespace ui {
     export function setCursor(sprite: Sprite): void {
         cursor = sprite
         controller.moveSprite(cursor)
+    }
+
+    // Checks if the cursor overlaps a button
+    function cursorOverlapsButton() {
+        // Checks if player cursor has been set
+        if (cursor == null) {
+            return
+        }
+        // Iterates through each Button object
+        for (let button of buttonArr) {
+            // Checks if the button overlaps with the cursor
+            if (button.sprite.overlapsWith(cursor)) {
+                button.showInfo()
+            }
+        }
     }
 
     // When the player clicks - checks if they clicked a button

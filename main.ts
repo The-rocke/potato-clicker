@@ -1,6 +1,7 @@
 namespace SpriteKind {
     export const Clickable = SpriteKind.create()
 }
+let mySprite = null
 info.setScore(0)
 clicker_game.setPpc(1)
 let spud = sprites.create(img`
@@ -63,6 +64,6 @@ sprites.create(img`
     `, SpriteKind.Clickable),
 1,
 10,
-2,
+1.45,
 "a"
 )
